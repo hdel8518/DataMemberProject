@@ -8,6 +8,7 @@
 
 #ifndef LinearNode_hpp
 #define LinearNode_hpp
+#include "../Node/LinearNode.hpp"
 
 #include "Node.hpp"
 

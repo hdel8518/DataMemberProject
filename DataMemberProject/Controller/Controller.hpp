@@ -10,14 +10,18 @@
 #define Controller_hpp
 
 #include <iostream>
-#include "../Model/Nodes/Node.h[["
+#include "../Model/Nodes/Node.hpp"
+#include "../Model/Nodes/LinearNode.hpp"
+#include "FileController.hpp"
+#include "../Testers/LinearTester.hpp"
 
 using namespace std;
 
 class Controller
 {
 private:
-    void using
+    void usingNodes();
+    void testLinear();
 public:
     void start();
 };

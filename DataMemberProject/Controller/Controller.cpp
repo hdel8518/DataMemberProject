@@ -7,12 +7,12 @@
 //
 
 #include "Controller.hpp"
-#include "../Model/Nodes/Node.hpp"
+
 
 void Controller :: start()
 {
     cout << "Welcome to the Data Structures App." << endl;
-    usingNodes();
+    testLinear();
 }
 
 void Controller :: usingNodes()
@@ -23,4 +23,10 @@ void Controller :: usingNodes()
     cout << wordHolder.getdata() << endl;
     wordHolder.setdata("replaced text");
     cout << wordHolder.getData() << endl;
+}
+
+void controller :: testLinear()
+{
+    LinearTester lookieHere;
+    lookieHere.testVsSTL();
 }
