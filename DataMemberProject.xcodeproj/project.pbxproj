@@ -41,6 +41,7 @@
 		3908829B220A209E00CA1D8B /* music.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		39130426221F2E4800266658 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		39130429221F349F00266658 /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
+		392883712232F0AE002D72FD /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		39492D4E220CBC72009FD1A9 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		395084B42214A8520034C152 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		395084B72214AEB50034C152 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
@@ -75,6 +76,14 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		3928836F2232F075002D72FD /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+				392883712232F0AE002D72FD /* Graph.hpp */,
+			);
+			path = NonLinear;
+			sourceTree = "<group>";
+		};
 		39492D4C220CBC51009FD1A9 /* Linear */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +107,8 @@
 		39CADE2B2202270000A6A2B4 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				39CADE322202276000A6A2B4 /* LinearNode.hpp */,
 				39130426221F2E4800266658 /* DoubleNode.hpp */,
+				39CADE322202276000A6A2B4 /* LinearNode.hpp */,
 				39130429221F349F00266658 /* CircularList.hpp */,
 				39E6F55421FF916B00114673 /* Node.hpp */,
 				39492D4C220CBC51009FD1A9 /* Linear */,
@@ -138,6 +147,7 @@
 		39E6F54A21FF8C0200114673 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3928836F2232F075002D72FD /* NonLinear */,
 				39CADE2B2202270000A6A2B4 /* Nodes */,
 			);
 			path = Model;
