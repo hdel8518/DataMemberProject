@@ -16,6 +16,13 @@ class List
 {
 protected:
     int size;
+    virtual void add(Type item) = 0;
+    virtual void addAtIndex(int index, Type item) = 0;
+    virtual Type remove(int index) = 0;
+    virtual Type getFromIndex(int index) = 0;
+    virtual int getSize() const = 0;
+    virtual LinearNode<Type> * getFront() = 0;
+    virtual LinearNode<Type> * getEnd() = 0;
 public:
     //List operrations
     virtual void add(Type item) = 0;
@@ -27,5 +34,7 @@ public:
     virtual LinearNode<Type> * getFront() = 0;
     virtual LinearNode<Type> * getEnd() = 0;
 };
+
+
 
 #endif /* List_hpp */
