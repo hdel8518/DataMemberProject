@@ -40,7 +40,8 @@ public:
     void depthFirstTraversal(Graph<Type> & graph, int vertex);
     void breadthFirstTraversal(Graph<Type> & graph, int vertex);
     int costTraversal(Graph<Type> & graph, int vertex);
-    
+};
+
     template <class Type>
     const int Graph<Type> :: MAXIMUM;
     
@@ -48,9 +49,14 @@ public:
     Graph<Type> :: Graph()
     {
         this->vertexCount = 0;
+        
+        for (int index = 0; index < MAXIMUM; index++)
+        {
+            int * row = weightCostMatrix[index];
+            std::fill_n(row, MAXIMUM, 0);
+        }
     }
-}
-
+    
 template <class Type>
 int Graph<Type> :: size() const
 {
@@ -258,6 +264,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
             }
         }
     }
+    
     
     return cost;0
     
